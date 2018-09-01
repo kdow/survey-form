@@ -1,0 +1,160 @@
+html {
+    background: #84c5d8;
+    color: #1e2322;
+}
+
+button,html,input,textarea {
+    font-family: Helvetica,sans-serif;
+}
+
+.container {
+    background: #b8e0ed;
+    margin: 5% 25% 7%;
+}
+
+h1 {
+    padding-top: 1em;
+}
+
+
+
+.category,form #section1 {
+    display: grid;
+    grid-template-columns: 45% 25%;
+    grid-gap: 1em;
+}
+
+h1,p {
+    display: grid;
+    grid-column: 1/-1;
+    justify-content: center
+}
+
+label {
+    text-align: right;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+li {
+    display: flex;
+}
+
+li label {
+    order: 1;
+}
+
+li input {
+    grid-area: input;
+}
+
+#checkboxes, #radio {
+    display: grid;
+    grid-template-columns: 90%;
+    grid-template-rows: repeat(5,1fr);
+    grid-gap: .5em;
+}
+
+.rating {
+  padding-left: .75em
+}
+
+.category {
+    grid-template-columns: 5% 90%;
+    grid-gap: 1.5em;
+}
+
+.cat {
+    text-align: left;
+}
+
+button {
+    font-size: 110%;
+    border-radius: 6px;
+    padding: .3em 1.2em;
+    margin: 0 .3em .3em 0;
+}
+
+#btn {
+    text-align: center;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+button:hover {
+    background-color: #84c5d8;
+}
+
+@media only screen and (max-width:600px) {
+    #checkboxes,.category,form #section1 {
+        display: grid;
+        grid-template-columns: 90%;
+        grid-gap: 1em;
+    }
+
+    label,select {
+        text-align: left;
+    }
+
+    input,label,select {
+        margin-left: 1em;
+    }
+
+    textarea {
+        margin-left: 2.25em;
+    }
+
+    #checkboxes {
+        margin-left: 1.5em;
+        grid-template-rows: repeat(5,1fr);
+        grid-gap: .5em;
+    }
+
+    .category {
+        grid-template-columns: 10% 90%;
+    }
+
+    .cat {
+        text-align: left;
+        margin-left: .5em;
+    }
+
+  #radio {
+    padding-left: 2.5em;
+  }
+
+  .rating {
+    padding-left: 0.25em;
+  }
+    h1,p {
+        text-align: center;
+    }
+    .container {
+        background: #b8e0ed;
+        margin: 5% 7% 10% 5%;
+}
+
+}
+
+@media only screen and (min-width: 600px) and (max-width:1400px) {
+  .container {
+    background: #b8e0ed;
+    margin: 5% 10% 7%;
+}
+
+
+  form #section1 {
+      display: grid;
+      grid-template-columns: 45% 35%;
+      grid-gap: 1em;
+}
+
+    .cat {
+        text-align: left;
+        margin-left: none;
+    }
+
+}

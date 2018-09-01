@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Customer Experience Survey</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <div class="container">
+        <h1 id="title">Customer Experience Survey</h1>
+        <p id="description">Please provide feedback on your most recent visit with us.</p>
+        <form id="survey-form">
+            <div id="section1">
+                <label id="name-label" for="name">Name: *</label>
+                <input type="text" name="name" id="name" placeholder="Enter your full name" required>
+                <label id="email-label" for="email">Email: *</label>
+                <input type="email" id="email" placeholder="Enter your email address" required>
+                <label id="number-label" for="number">Age: *</label>
+                <input type="number" id="number" min="13" max="120" step="1" placeholder="Age" required>
+                <label for="rating">Which location did you visit?:</label>
+                <select id="dropdown" name="location">
+                  <option value="Los Angeles">Los Angeles</option>
+                  <option value="New York">New York</option>
+                  <option value="Chicago">Chicago</option>
+                </select>
+                <label for="rating-label">How would you rate your experience?: * </label>
+                  <ul>
+                    <div id="radio">
+                    <li class>
+                        <label class="rating" for="very-positive">Very positive</label>
+                        <input type="radio" id="very-positive" name="rating" value="very positive">
+                    </li>
+                    <li>
+                        <label class="rating" for="positive">Positive</label>
+                        <input type="radio" id="positive" name="rating" value="positive">
+                    </li>
+                    <li>
+                        <label class="rating" for="average">Average</label>
+                        <input type="radio" id="average" name="rating" value="average">
+                    </li>
+                    <li>
+                        <label class="rating" for="negative">Negative</label>
+                        <input type="radio" id="negative" name="rating" value="negative">
+                    </li>
+                    <li>
+                        <label class="rating" for="very-negative">Very Negative</label>
+                        <input type="radio" id="very-negative" name="rating" value="very negative">
+                    </li>
+                    </div>
+                  </ul>
+                <label class="description" for="departments-label">Which department(s) did you visit?:</label>
+                <div id="checkboxes">
+                    <label class="category">
+                      <input type="checkbox" name="clothing" value="clothing">
+                      <span class="cat">Clothing</span>
+                    </label>
+                    <label class="category">
+                      <input type="checkbox" name="electronics" value="electronics">
+                      <span class="cat">Electronics</span>
+                    </label>
+                    <label class="category">
+                      <input type="checkbox" name="home" value="home">
+                      <span class="cat">Home</span>
+                    </label>
+                    <label class="category">
+                      <input type="checkbox" name="office" value="office">
+                      <span class="cat">Office</span>
+                    </label>
+                    <label class="category">
+                      <input type="checkbox" name="kitchen" value="kitchen">
+                      <span class="cat">Kitchen</span>
+                    </label>
+                </div>
+                <label for="comments">Comments: </label>
+                  <textarea id="comments" name="comments" maxlength="500" rows="6" placeholder="Enter any additional comments or questions you may have."></textarea>
+            </div>
+            <div id="btn">
+                <button id="submit" type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+
+</html>
